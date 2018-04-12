@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Other: {fileID: 274419371}
-  Stiffness: 2
+  Stiffness: 25
   RestOffset: 2
 --- !u!114 &438585932
 MonoBehaviour:

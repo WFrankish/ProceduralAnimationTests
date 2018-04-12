@@ -127,6 +127,8 @@ GameObject:
   - component: {fileID: 274419371}
   - component: {fileID: 274419372}
   - component: {fileID: 274419373}
+  - component: {fileID: 274419375}
+  - component: {fileID: 274419374}
   m_Layer: 0
   m_Name: Butt
   m_TagString: Untagged
@@ -194,7 +196,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 274419366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 2, z: 0}
+  m_LocalPosition: {x: -1.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -243,6 +245,36 @@ MonoBehaviour:
   Other: {fileID: 435168765}
   Stiffness: 50
   RestOffset: 1.5
+--- !u!114 &274419374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 274419366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047a2794e89b09643b68123022249c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Other: {fileID: 1258513533}
+  Stiffness: 0
+  RestAngleX: -45
+  RestAngleZ: -45
+--- !u!114 &274419375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 274419366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047a2794e89b09643b68123022249c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Other: {fileID: 435168765}
+  Stiffness: 0
+  RestAngleX: 45
+  RestAngleZ: -45
 --- !u!1 &435168764
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435168764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7, y: 1, z: 0.4}
+  m_LocalPosition: {x: -1.7, y: 1, z: 0.4}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -359,6 +391,8 @@ GameObject:
   - component: {fileID: 438585932}
   - component: {fileID: 438585931}
   - component: {fileID: 438585939}
+  - component: {fileID: 438585940}
+  - component: {fileID: 438585941}
   m_Layer: 0
   m_Name: Torso
   m_TagString: Untagged
@@ -502,8 +536,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Other: {fileID: 823880166}
   Stiffness: 1
-  RestAngleX: 90
-  RestAngleZ: 90
+  RestAngleX: 45
+  RestAngleZ: -45
+--- !u!114 &438585940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 438585930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047a2794e89b09643b68123022249c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Other: {fileID: 910222250}
+  Stiffness: 1
+  RestAngleX: -45
+  RestAngleZ: 45
+--- !u!114 &438585941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 438585930}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047a2794e89b09643b68123022249c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Other: {fileID: 274419371}
+  Stiffness: 1
+  RestAngleX: 0
+  RestAngleZ: 0
 --- !u!1 &491780089
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +748,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 823880165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 1, z: 0.4}
+  m_LocalPosition: {x: 0.2, y: 1, z: 0.4}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -784,7 +848,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 910222249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 1, z: -0.4}
+  m_LocalPosition: {x: 0.2, y: 1, z: -0.4}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -869,7 +933,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258513528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7, y: 1, z: -0.4}
+  m_LocalPosition: {x: -1.7, y: 1, z: -0.4}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}

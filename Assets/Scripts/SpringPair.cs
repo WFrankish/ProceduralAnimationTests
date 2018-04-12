@@ -21,7 +21,7 @@ public class SpringPair : MonoBehaviour {
         Vector3 difference = offset - (offset.normalized * RestOffset);
         Vector3 force = Stiffness * difference;
 
-        _self.AddForce(force / 2f);
-        Other.AddForce(-force / 2f);
+        _self.AddForce(force);
+        Other.AddForce(-force);
     }
 }
